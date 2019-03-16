@@ -11,7 +11,7 @@
 #import "JXCategoryListContainerView.h"
 #import "ListView.h"
 #import "JXCategoryIndicatorLineView.h"
-
+#import "MPOneKind.h"
 @interface ViewController ()<JXCategoryViewDelegate, JXCategoryListContainerViewDelegate>
 
 @property (nonatomic, strong) UIView *container;
@@ -60,7 +60,7 @@
 }
 
 - (id<JXCategoryListContentViewDelegate>)preferredListAtIndex:(NSInteger)index {
-    return [[ListView alloc] init];
+    return [[MPOneKind alloc] init];
 }
 
 - (JXCategoryTitleView *)categoryView {
